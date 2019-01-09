@@ -1,0 +1,998 @@
+// .hero {
+// 	background-color: #FFF;
+// 	background-image: url('../../images/img/mobile-header.jpg');
+// 	background-size: 100%;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	position: relative;
+// 	height: 100vh;
+// 	overflow: hidden;
+// 	@include bp (min-width, $lg-tablet) {
+// 		background-image: url('../../images/img/foot_growl.gif');
+// 		background-size: contain;
+// 		background-position: 90%;
+// 	}
+//
+// 	.play-btn {
+// 		width: 128px;
+// 		position: absolute;
+// 		left: 50%;
+// 		margin-left: -66px;
+// 		top: 70%;
+// 		margin-top: -85px;
+// 		cursor:pointer;
+// 	}
+//
+// 	.logo-wrap {
+// 		width: 300px;
+// 		position: absolute;
+// 		top: 20%;
+// 		text-align: center;
+// 		animation: logo 0.4s ease-out forwards;
+// 		z-index: 1;
+// 		left: 0;
+// 		width: 100%;
+// 		right: 0;
+// 		margin-left: 0;
+// 		padding: 10px 0;
+// 		background: rgba( 255, 255, 255, 0.8 );
+//
+// 		.logo {
+// 			max-width: 280px;
+//
+// 		}
+// 	}
+//
+// 	@media only screen and (min-width: 1024px) {
+// 			.logo-wrap {
+// 	    top: 30%;
+// 	    background: transparent;
+// 	    margin-left: -150px;
+// 	    width: 369px;
+// 	    margin-left: 0;
+// 	    left: 10%;
+// 		}
+// 	}
+//
+// 	.arrow {
+// 		cursor: pointer;
+// 		position: absolute;
+// 		z-index: 1;
+// 		bottom: 30px;
+// 		left: 50%;
+// 		width: 53px;
+// 		margin-left: -26.5px;
+// 		animation: arrow 2s infinite;
+// 	}
+//
+// 	.sutc {
+// 		position: absolute;
+// 		right: 10px;
+// 		bottom: 10px;
+// 		max-width: 100px;
+// 		@include bp (min-width, $lg-tablet) {
+// 			right: 30px;
+// 			bottom: 30px;
+// 			max-width: none;
+// 		}
+// 	}
+// }
+//
+// .intro {
+// 	color: $yellow;
+// 	padding: 10px 20px;
+// 	background-color: $red;
+// 	@include bp (min-width, $lg-tablet) {
+// 		padding: 50px;
+// 	}
+//
+// 	br {
+// 		display: none;
+// 		@include bp (min-width, $desktop) {
+// 			display: block;
+// 		}
+// 	}
+//
+// 	h2 {
+// 		margin: 0;
+// 		text-align: center;
+// 		@include bp (min-width, $lg-tablet) {
+// 			text-align: left;
+// 		}
+// 	}
+//
+// 	.left-col,
+// 	.right-col {
+// 		padding: 20px 0;
+// 		@include bp (min-width, $lg-tablet) {
+// 			padding: 0 50px;
+// 		}
+// 	}
+//
+// 	.stats {
+// 		padding-bottom: 30px;
+// 		float: left;
+// 		width: 100%;
+// 		text-align: center;
+// 		@include bp (min-width, $lg-tablet) {
+// 			text-align: left;
+// 		}
+//
+// 		.item {
+// 			width: 100%;
+// 			float: left;
+// 			padding-bottom: 10px;
+// 			@include bp (min-width, $lg-tablet) {
+// 				width: 33.33%;
+// 				padding-bottom: 0;
+// 			}
+//
+// 			span {
+// 				font-family: $secondary-font;
+// 				font-size: 52px;
+// 				line-height: 1;
+// 				text-align: left;
+// 				text-transform: uppercase;
+// 				font-family: $primary-font;
+// 				font-weight: bold;
+// 				@include bp (min-width, $lg-tablet) {
+// 					float: left;
+// 				}
+// 				@include bp (min-width, $desktop) {
+// 					font-size: 58px;
+// 					line-height: 1;
+// 				}
+//
+// 				&.number {
+// 					font-size: 52px;
+// 					line-height: 1;
+// 					@include bp (min-width, $desktop) {
+// 						font-size: 58px;
+// 						line-height: 1;
+// 					}
+// 				}
+//
+// 				&.title {
+// 					width: 100%;
+// 					font-size: 28px;
+// 					line-height: 1;
+// 					@include bp (min-width, $desktop) {
+// 						font-size: 32px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+//
+// .get-involved {
+// 	padding: 50px 0;
+// 	position: relative;
+// 	text-align: center;
+// 	background-color: $yellow;
+//
+// 	h3 {
+// 		color: $red;
+// 	}
+// 	@include bp (min-width, $lg-tablet) {
+// 		padding: 50px 0 100px;
+// 	}
+//
+// 	.lines {
+// 		position: absolute;
+// 		top: 178px;
+// 		float: left;
+// 		display: none;
+// 		@include bp (min-width, $lg-tablet) {
+// 			display: block;
+// 		}
+// 		@include bp (min-width, $desktop) {
+// 			top: 180px;
+// 		}
+//
+// 		&.start {
+// 			animation: lines 1.5s ease-out forwards;
+// 		}
+//
+// 		.line {
+// 			height: 15px;
+// 			width: 100%;
+// 			float: left;
+// 			background-color: $red;
+// 			margin-bottom: 5px;
+// 		}
+// 	}
+//
+// 	h3 {
+// 		text-align: center;
+// 		margin-top: 0;
+// 		margin-bottom: 50px;
+// 	}
+//
+// 	.cta {
+// 		position: relative;
+// 		z-index: 2;
+// 		max-width: 540px;
+// 		transition: background-image 0.2s linear;
+// 		@include bp (min-width, $lg-tablet) {
+// 			width: 45%;
+// 		}
+//
+// 		img {
+// 			width: 100%;
+// 			visibility: hidden;
+// 		}
+//
+// 		&.register {
+// 			display: inline-block;
+// 			padding-bottom: 30px;
+// 			background-image: url("../../images/img/register-btn.jpg");
+// 			background-size: cover;
+// 			background-size: 100%;
+// 			background-repeat: no-repeat;
+// 			position: relative;
+// 			width: 70%;
+// 			height: 130px;
+// 			position: relative;
+//
+// 			&:after {
+// 				content: '';
+// 				width: 100%;
+// 				height: 100%;
+// 				background-image: url("../../images/img/register-btn-hover.jpg");
+// 				background-repeat: no-repeat;
+// 				background-size: inherit;
+// 				display: none;
+// 				position: absolute;
+// 				top: 0;
+// 				left: 0;
+// 				bottom: 0;
+// 				right: 0;
+// 			}
+//
+// 			&:hover {
+// 				&:after {
+// 					display: block;
+// 				}
+// 			}
+// 			@include bp (min-width, $mobile) {
+// 				height: 220px;
+// 			}
+// 			@include bp (min-width, $sm-tablet) {
+// 				width: 50%;
+// 			}
+// 			@include bp (min-width, $lg-tablet) {
+// 				padding-bottom: 0;
+// 				height: 160px;
+// 				width: 30%;
+// 				margin-right: 2.5%;
+// 				float: left;
+// 			}
+// 		}
+//
+// 		&.login {
+// 			display: inline-block;
+// 			padding-bottom: 30px;
+// 			background-image: url("../../images/img/login-btn.jpg");
+// 			background-size: cover;
+// 			background-size: 100%;
+// 			background-repeat: no-repeat;
+// 			position: relative;
+// 			width: 70%;
+// 			height: 130px;
+// 			position: relative;
+//
+// 			&:after {
+// 				content: '';
+// 				width: 100%;
+// 				height: 100%;
+// 				background-image: url("../../images/img/login-btn-hover.jpg");
+// 				background-repeat: no-repeat;
+// 				background-size: inherit;
+// 				display: none;
+// 				position: absolute;
+// 				top: 0;
+// 				left: 0;
+// 				bottom: 0;
+// 				right: 0;
+// 			}
+//
+// 			&:hover {
+// 				&:after {
+// 					display: block;
+// 				}
+// 			}
+// 			@include bp (min-width, $mobile) {
+// 				height: 220px;
+// 			}
+// 			@include bp (min-width, $sm-tablet) {
+// 				width: 50%;
+// 			}
+// 			@include bp (min-width, $lg-tablet) {
+// 				float: left;
+// 				height: 180px;
+// 				width: 30%;
+// 				margin: 0 2.5%;
+// 			}
+// 		}
+//
+// 		&.fundraising {
+// 			display: inline-block;
+// 			background-image: url("../../images/img/fundraising-btn.jpg");
+// 			background-size: cover;
+// 			background-size: 100%;
+// 			background-repeat: no-repeat;
+// 			width: 70%;
+// 			height: 130px;
+// 			position: relative;
+//
+// 			&:after {
+// 				content: '';
+// 				width: 100%;
+// 				height: 100%;
+// 				background-image: url("../../images/img/fundraising-btn-hover.jpg");
+// 				background-repeat: no-repeat;
+// 				background-size: inherit;
+// 				display: none;
+// 				position: absolute;
+// 				top: 0;
+// 				left: 0;
+// 				bottom: 0;
+// 				right: 0;
+// 			}
+//
+// 			&:hover {
+// 				&:after {
+// 					display: block;
+// 				}
+// 			}
+// 			@include bp (min-width, $mobile) {
+// 				height: 220px;
+// 			}
+// 			@include bp (min-width, $sm-tablet) {
+// 				width: 50%;
+// 			}
+// 			@include bp (min-width, $lg-tablet) {
+// 				float: right;
+// 				height: 160px;
+// 				width: 30%;
+// 				margin-left: 2.5%;
+// 			}
+// 		}
+// 	}
+// }
+//
+// .total-section {
+// 	// background-image: url('../../img/flames-left.png'), url('../../img/flames-right.png');
+// 	// background-repeat: no-repeat;
+// 	// background-position: left bottom, right bottom;
+// 	padding-bottom: 180px;
+// 	position:relative;
+// 	.flames {
+// 		position:absolute;
+// 		background-size:cover;
+// 		background-repeat: no-repeat;
+// 		width:437px;
+// 		max-width:100%;
+// 		height:176px;
+// 		bottom:-180px;
+// 		&.start {
+// 			animation: flames .5s ease-out forwards;
+// 		}
+// 		&.flames-left {
+// 			left:0;
+// 			background-image: url('../../images/img/flames-left.png');
+// 		}
+// 		&.flames-right {
+// 			right:0;
+// 			background-image: url('../../images/img/flames-right.png');
+// 		}
+// 	}
+// 	.inner {
+// 		max-width: 850px;
+// 		padding: 20px;
+//
+// 		.left-col {
+// 			width: 100%;
+// 			float: left;
+// 			@include bp (min-width, $lg-tablet) {
+// 				width: 70%;
+// 			}
+// 			h2 {
+// 				color: $red;
+// 				font-size:48px;
+// 				line-height:44px;
+// 				letter-spacing: -1px;
+// 				text-align:center;
+// 				@include bp (min-width, $lg-tablet) {
+// 					text-align:left;
+// 					font-size: 76px;
+// 					line-height: 61px;
+// 				}
+// 				span {
+// 					&.large {
+// 						font-size:48px;
+// 						@include bp (min-width, $lg-tablet) {
+// 							font-size: 83px;
+// 						}
+// 					}
+//
+// 					&.xlarge {
+// 						font-size:48px;
+// 						@include bp (min-width, $lg-tablet) {
+// 							font-size: 95px;
+// 							line-height: 75px;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+//
+// 		.right-col {
+// 			width: 100%;
+// 			float: left;
+// 			text-align:center;
+// 			@include bp (min-width, $lg-tablet) {
+// 				width: 30%;
+// 			}
+// 			img {
+// 				padding-top: 20px;
+// 				max-width: 200px;
+// 				width: 100%;
+// 				clear:both;
+// 				@include bp (min-width, $lg-tablet) {
+// 					clear:none;
+// 					float: right;
+// 					padding-top: 70px;
+// 				}
+// 			}
+// 			.red-cta {
+// 				clear:both;
+// 				margin:30px;
+// 				display:inline-block;
+// 				@include bp (min-width, $lg-tablet) {
+// 					margin:20px 0 0;
+// 					float:right;
+// 					clear:none;
+// 				}
+// 			}
+// 		}
+//
+// 		.total-raised {
+// 			margin: 10px 0;
+// 			border: 10px solid $red;
+// 			color: $red;
+// 			padding: 10px;
+// 			text-align:center;
+// 			float:left;
+// 			width:100%;
+// 			@include bp (min-width, $lg-tablet) {
+// 				width: calc(100% - 100px);
+// 				padding: 10px 40px;
+// 				margin: 50px 50px 0;
+// 			}
+// 			span {
+// 				font-size: 36px;
+// 				font-family: $primary-font;
+// 				text-transform: uppercase;
+// 				@include bp (min-width, $sm-tablet) {
+// 					float: left;
+// 				}
+// 				&.amount {
+// 					@include bp (min-width, $sm-tablet) {
+// 						float: right;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+//
+// .the-rivals {
+// 	padding-bottom: 50px;
+// 	background-color: $red;
+// 	position:relative;
+// 	padding-top: 50px;
+// 	@include bp (min-width, $lg-tablet) {
+// 		padding-bottom:60px;
+// 	}
+// 	.trainers {
+// 		display:none;
+// 		position:absolute;
+// 		bottom:-120px;
+// 		@include bp (min-width, $lg-tablet) {
+// 			display:block;
+// 		}
+// 		&.trainer-left {
+// 			left:-100%;
+// 			width:440px;
+// 			height:450px;
+// 			background-position:100% 100%;
+// 			background-image: url('../../images/img/trainer-l.png');
+// 			background-repeat:no-repeat;
+// 			&.start {
+// 				animation: trainerleft .5s ease-out forwards;
+// 			}
+// 		}
+// 		&.trainer-right {
+// 			right:-100%;
+// 			width:440px;
+// 			height:450px;
+// 			background-position:100% 100%;
+// 			background-image: url('../../images/img/trainer-r.png');
+// 			background-repeat:no-repeat;
+// 			&.start {
+// 				animation: trainerright .5s ease-out forwards;
+// 			}
+// 		}
+// 	}
+// 	.inner {
+// 		max-width:1000px;
+// 	}
+// 	h2 {
+// 		text-align:center;
+// 		margin-top:0;
+// 	}
+// 	.leaders {
+// 		.col {
+// 			width:100%;
+// 			float:left;
+// 			text-align:center;
+// 			position:relative;
+// 			@include bp (min-width, $lg-tablet) {
+// 				width:33.33%;
+// 			}
+// 			.yellow-cta {
+// 				float:none;
+// 				display:inline-block;
+// 			}
+// 			.thumbnail-wrap {
+// 				position:relative;
+// 				overflow:hidden;
+// 				border-radius:320px;
+// 				border:8px solid $yellow;
+// 				margin-bottom:20px;
+// 				width:160px;
+// 				height:160px;
+// 				max-width:320px;
+// 				max-width:320px;
+// 				margin:20px auto 0;
+// 				@include bp (min-width, $lg-tablet) {
+// 					margin: 0 auto;
+// 					width:320px;
+// 					height:320px;
+// 				}
+// 				&:after {
+// 					content:'';
+// 					position:absolute;
+// 					top:0;
+// 					bottom:0;
+// 					left:0;
+// 					right:0;
+// 					width:100%;
+// 					height:100%;
+// 				}
+// 			}
+// 			&.win {
+// 				.thumbnail-wrap {
+// 					&:after {
+// 						background: rgba(147, 194, 50, 0.8);
+// 					}
+// 				}
+// 			}
+// 			&.lose {
+// 				.thumbnail-wrap {
+// 					&:after {
+// 						background: rgba(200, 54, 54, 0.8);
+// 					}
+// 				}
+// 			}
+// 			&.vs {
+// 				font-size:180px;
+// 				color:$yellow;
+// 				font-family:$primary-font;
+// 			}
+// 		}
+// 		.thumbnail {
+// 			width:100%;
+// 			height:100%;
+// 		}
+// 		h3 {
+// 			color:#FFF;
+// 			margin:15px 0 0;
+// 			&.text-overlay {
+// 				position: absolute;
+// 			    z-index: 99;
+// 			    text-align: center;
+// 			    width: 100%;
+// 			    top: 120px;
+// 			}
+// 		}
+// 		h4 {
+// 			color:$yellow;
+// 			margin-top:0;
+// 		}
+// 	}
+// 	#rivals-wrap {
+// 		width:100%;
+// 		float:left;
+// 	}
+// }
+//
+// .other-rivals {
+// 	padding:50px 0;
+// 	background-color: $yellow;
+// 	text-align:center;
+// 	.show-more {
+// 		transition: all .2s linear;
+// 		text-align:center;
+// 		cursor:pointer;
+// 		&.active {
+// 			transform:rotate(180deg);
+// 		}
+// 	}
+// 	#rivals-wrap {
+// 		display:none;
+// 		padding:20px;
+// 		.page {
+// 			width:33.33%;
+// 			height:100px;
+// 			padding-bottom:20px;
+// 			margin-bottom:20px;
+// 			float:left;
+// 			border-bottom:5px solid $red;
+// 		}
+// 		.vs {
+// 			width:33.33%;
+// 			height:100px;
+// 			padding-bottom:20px;
+// 			margin-bottom:20px;
+// 			float:left;
+// 			border-bottom:5px solid $red;
+// 		}
+// 	}
+// }
+//
+// .fundraising-pack {
+// 	background-color: $yellow;
+// 	padding: 20px;
+// 	position:relative;
+// 	z-index:1;
+// 	@include bp (min-width, $lg-tablet) {
+// 		padding: 50px 0 100px;
+// 	}
+// 	.inner {
+// 		max-width: 980px;
+//
+// 		h2 {
+// 			&.title {
+// 				color: $red;
+// 				margin:0;
+// 				@include bp (min-width, $lg-tablet) {
+// 					margin-bottom:30px;
+// 				}
+// 			}
+// 			text-align: center;
+// 			color: $yellow;
+// 		}
+//
+// 		.left-col {
+// 			p {
+// 				@include bp (min-width, $lg-tablet) {
+// 					text-align: left;
+// 					width:85%;
+// 				}
+// 				font-size: 34px;
+// 				line-height: 32px;
+// 				color:#fff;
+// 				font-family: $primary-font;
+// 				text-transform:uppercase;
+// 			}
+// 			p.yellow {
+// 				color: $yellow;
+// 			}
+// 			p.red {
+// 				color: $red;
+// 			}
+// 			.download-btn {
+// 				margin-top:20px;
+// 				background:#fff;
+// 				@include bp (min-width, $lg-tablet) {
+// 					float:left;
+// 				}
+// 			}
+// 		i {
+// 			line-height:52px;
+// 		}
+// 		}
+//
+// 		.right-col {
+// 			img {
+// 				margin-top:40px;
+// 				margin-bottom:20px;
+// 				width:100%;
+// 				max-width:480px;
+// 				border:1px solid #fff;
+// 			}
+// 			p {
+// 				font-size: 34px;
+// 				max-width: 400px;
+// 				line-height: 32px;
+// 				color:$red;
+// 				font-family:Open Sans Condensed,sans-serif;
+// 				text-transform:uppercase;
+// 				text-align:center;
+// 				margin:0 auto;
+//
+// 				span {
+// 					&.small {
+// 						font-size: 72px;
+// 						@include bp (min-width, $lg-tablet) {
+// 							font-size: 120px;
+// 						}
+// 					}
+//
+// 					&.large {
+// 						font-size:72px;
+// 						@include bp (min-width, $lg-tablet) {
+// 							font-size: 178px;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+//
+// 	i {
+//
+// 		line-height:52px;
+// 	}
+//
+// }
+//
+// .details {
+// 	padding: 30px 80px 60px;
+// 	background-color: $red;
+// 	text-align: center;
+// 	@include bp (min-width, $sm-tablet) {
+// 		text-align: left;
+// 	}
+// 	@include bp (min-width, $lg-tablet) {
+// 		.inner {
+// 			padding:0 40px;
+// 		}
+// 	}
+//
+// 	.item {
+// 		width: 100%;
+// 		float: left;
+// 		@include bp (min-width, $sm-tablet) {
+// 			width: 33.33%;
+// 			padding: 0 20px;
+// 		}
+//
+// 		.icon {
+// 			@include bp (min-width, $sm-tablet) {
+// 				float: left;
+// 				padding-right: 20px;
+// 			}
+// 		}
+//
+// 		.info {
+// 			float: left;
+// 			width: 100%;
+// 			@include bp (min-width, $lg-tablet) {
+// 				width: auto;
+// 			}
+//
+// 			p {
+// 				margin-top: 0;
+// 			}
+// 		}
+//
+// 		h3 {
+// 			margin: 0;
+// 		}
+//
+// 		p {
+// 			color: #FFF;
+// 		}
+// 	}
+// }
+//
+// .stand-up {
+// 	padding: 20px 10px;
+//
+// 	h2 {
+// 		text-align: center;
+// 	}
+// 	@include bp (min-width, $lg-tablet) {
+// 		padding: 50px;
+// 	}
+//
+// 	.left-col,
+// 	.right-col {
+// 		@include bp (min-width, $lg-tablet) {
+// 			padding: 0 50px;
+// 		}
+// 	}
+//
+// 	.right-col {
+// 		.stand-up-logo {
+// 			padding: 20px;
+// 			max-width: 200px;
+// 			@include bp (min-width, $lg-tablet) {
+// 				float: right;
+// 				max-width: none;
+// 				padding: 100px 50px 0;
+// 			}
+// 		}
+// 	}
+//
+// 	.money {
+// 		width: 100%;
+// 		float: left;
+// 		margin-top: 30px;
+// 		margin-bottom: 30px;
+// 		@include bp (min-width, $lg-tablet) {
+// 			padding: 50px;
+// 		}
+//
+// 		.wrap {
+// 			background-color: #f5f5ee;
+// 			padding: 20px 0;
+// 			float: left;
+// 		}
+//
+// 		h3,
+// 		p {
+// 			text-align: center;
+// 		}
+//
+// 		h3 {
+// 			margin-bottom: 0;
+// 			margin-top: 10px;
+// 			color: $red;
+// 		}
+//
+// 		.items {
+// 			margin-top: 30px;
+//
+// 			.item {
+// 				float: left;
+// 				width: 100%;
+// 				padding: 0 30px;
+// 				text-align: center;
+// 				padding-top: 20px;
+// 				color: $red;
+//
+// 				p {
+// 					margin-top: 0;
+// 					font-weight: 300;
+// 					font-size: 16px;
+// 					font-family: $secondary-font;
+// 				}
+// 				@include bp (min-width, $sm-tablet) {
+// 					padding-top: 0;
+// 					width: 25%;
+//
+// 					p {
+// 						margin-top: 10px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+//
+// 	.faq {
+// 		width: 100%;
+// 		float: left;
+// 		margin-bottom: 30px;
+//
+// 		h3 {
+// 			margin-top: 0;
+// 			text-align: center;
+// 		}
+// 		h4 {
+// 			text-align: left;
+// 			font-weight: 700;
+// 			padding: 20px;
+// 			margin:0;
+// 			display: block;
+// 			text-decoration: none;
+// 			color: $red;
+// 			font-family:$secondary-font;
+// 			transition: background-color 0.5s ease-in-out;
+// 			border-bottom: 2px solid #f3f3f3;
+// 		}
+// 		dl {
+// 			margin:0;
+// 		}
+// 		.accordionTitle {
+// 			text-align: left;
+// 			font-weight: 700;
+// 			padding: 30px 20px;
+// 			display: block;
+// 			text-decoration: none;
+// 			color: #000;
+// 			font-family:$secondary-font;
+// 			transition: background-color 0.5s ease-in-out;
+// 			border-bottom: 1px solid #f3f3f3;
+//
+// 			&:before {
+// 				content: "+";
+// 				color:$red;
+// 				font-size: 2em;
+// 				line-height: 0.5em;
+// 				float: right;
+// 				transition: transform 0.3s ease-in-out;
+// 			}
+//
+// 		}
+//
+// 		.accordionTitle.is-expanded,
+// 		.accordionTitleActive {
+// 			&.accordion-title {
+// 				&.is-expanded {
+// 					border:0;
+// 				}
+// 			}
+// 			&:before {
+// 				content:"-";
+// 				transform: rotate(-360deg);
+// 			}
+// 		}
+//
+// 		.accordionItem {
+// 			height: auto;
+// 			overflow: hidden;
+// 			margin-left:0;
+// 			padding:0 20px;
+// 			//SHAME: magic number to allow the accordion to animate
+// 			max-height: 50em;
+// 			transition: max-height 1s;
+// 			@include bp (min-width, $sm-tablet) {
+// 				max-height: 15em;
+// 				transition: max-height 0.5s;
+// 			}
+// 			&.is-expanded {
+// 				border-bottom: 1px solid #f3f3f3;
+// 				padding-bottom:30px;
+// 			}
+// 			p {
+// 				color:#444;
+// 				font-size:14px;
+// 				font-family:$secondary-font;
+// 				font-weight:normal;
+// 			}
+// 		}
+//
+// 		.accordionItem.is-collapsed {
+// 			max-height: 0;
+// 		}
+//
+// 		.no-js .accordionItem.is-collapsed {
+// 			max-height: auto;
+// 		}
+//
+// 		.animateIn {
+// 			animation: accordionIn 0.45s normal ease-in-out both 1;
+// 		}
+//
+// 		.animateOut {
+// 			animation: accordionOut 0.45s alternate ease-in-out both 1;
+// 		}
+// 	}
+// }
+//
+// @media only screen and (max-device-width: 1024px) {
+//
+// 	#winningtext {
+// 		top:70px;
+// 	}
+//
+// 	#losingtext {
+// 		top:40px;
+// 	}
+//
+// }

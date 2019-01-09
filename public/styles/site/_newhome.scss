@@ -1,0 +1,969 @@
+p {
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #212529;
+
+    &.large {
+    font-size: 1.8em;
+        margin-bottom: 1.8rem;
+  }
+
+
+  &.small {
+  font-size: 1.2em;
+      margin-bottom: 1.8rem;
+      font-weight: 600;
+}
+
+    .red {
+        color: $red;
+    }
+
+
+}
+
+.header {
+    font-size: 2.2rem;
+}
+
+.x-large {
+    font-size: 3rem;
+}
+
+
+.bg-light {
+    background-color: black !important;
+}
+
+
+nav.navbar.navbar-expand-lg {
+    background-color: $black;
+}
+
+.lines.start {
+    width: 100%;
+    position: absolute;
+    top: 46%;
+    z-index: 1;
+}
+
+a.nav-link {
+  font-family:$primary-font;
+  text-transform:uppercase;
+  transition: color .2s linear;
+  font-size:1rem;
+  color:$white;
+  font-weight: 700;
+
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+
+.navbar-collapse.collapse {
+    transition: height 0.2s;
+}
+.navbar-collapse.collapsing {
+    height: 0 !important;
+}
+.navbar-collapse.collapse.show {
+    max-height: none;
+    height: 100vh;
+    padding-top: 2em;
+}
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.8em;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+background-color: $white;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: $white;
+}
+
+a#donate {
+    border: 2px solid $white;
+    padding-right: 0.5em;
+}
+
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+}
+}
+
+.nav-link {
+    display: block;
+    padding: 0rem 0rem;
+}
+
+.twitter-icon, .fb-icon {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.twitter-icon:hover, .fb-icon:hover  {
+  fill: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 992px) {
+  .twitter-icon, .fb-icon {
+    fill: rgba(255, 255, 255, 1);
+  }
+
+}
+
+.jumbotron {
+    background: url(/images/sprintathon_chevron2.svg) no-repeat center center;
+    background-size: 40rem;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: $red;
+    border-radius: 0rem;
+    position: relative;
+
+}
+
+.slanted {
+    font-size: 40px;
+    text-transform: uppercase;
+    transform: rotate(-5deg) skew(-5deg);
+    width: 100%;
+    margin: auto;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    color: $yellow;
+}
+
+h1, h2, h3, h4 {
+    font-family: $secondary-font, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.button-primary {
+    color: $yellow;
+    background-color: $transparent;
+    BORDER-RADIUS: 0;
+    BORDER: 3PX SOLID $yellow;
+    PADDING: 0;
+    FONT-WEIGHT: 700;
+    MARGIN-TOP: 3EM;
+    transition: background-color 0.5s ease;
+    background-color: $red;
+}
+
+
+.button-secondary {
+    color: $red;
+    background-color: $transparent;
+    BORDER-RADIUS: 0;
+    BORDER: 3PX SOLID $red;
+    PADDING: 0;
+    FONT-WEIGHT: 700;
+    transition: background-color 0.5s ease;
+}
+
+.button-secondary span {
+    position: relative;
+    color: $red;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em;
+    padding-inline-end: 2em;
+}
+
+.button-secondary span:after {
+width: 18px;
+height: 22px;
+position: absolute;
+right: 15px;
+content: "";
+display: block;
+top: 56%;
+margin-top: -14px;
+background-image: url('/images/sprintathon_button-red arrow.svg');
+background-repeat: no-repeat;
+content: "";
+display: block;
+position: absolute;
+transition: all .3s ease-out;
+}
+
+.button-primary span:after {
+width: 18px;
+height: 22px;
+position: absolute;
+right: 15px;
+content: "";
+display: block;
+top: 56%;
+margin-top: -14px;
+background-image: url('/images/sprintathon_button-yellow arrow.svg');
+background-repeat: no-repeat;
+content: "";
+display: block;
+position: absolute;
+transition: all .3s ease-out;
+}
+
+
+.button-primary span {
+    position: relative;
+    color: $yellow;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em;
+    padding-inline-end: 2em;
+}
+
+
+button span:hover:after  {
+right: 10px;
+}
+
+
+
+
+@media (max-width: 750px) {
+
+
+
+.button-primary {
+    color: $yellow;
+    BORDER-RADIUS: 0;
+    BORDER: 3PX SOLID $yellow;
+    PADDING: 0;
+    FONT-WEIGHT: 700;
+    MARGIN-TOP: 2EM;
+    transition: background-color 0.5s ease;
+    background-color: $red;
+}
+
+.button-secondary {
+    color: red;
+    background-color: transparent;
+    BORDER-RADIUS: 0;
+    BORDER: 3PX SOLID #red;
+    PADDING: 0;
+    FONT-WEIGHT: 700;
+    transition: background-color 0.5s ease;
+    background-color: trasparent;
+}
+
+
+
+
+
+.slanted {
+    font-size: 40px;
+    text-transform: uppercase;
+    transform: rotate(-5deg) skew(-5deg);
+    width: 100%;
+    margin: auto;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: $yellow;
+    line-height: 3rem;
+  }
+
+  p {
+    font-family: $secondary-font, sans-serif;
+    font-weight: 700;
+    line-height: 1.2em;
+
+      &.large {
+      font-size: 1.2em;
+          margin-bottom: 1.8rem;
+    }
+
+
+    &.small {
+    font-size: 1rem;
+        margin-bottom: 1.8rem;
+        font-weight: 600;
+  }
+
+      .red {
+          color: $red;
+      }
+
+
+}
+
+  .x-large {
+      font-size: 2.5rem;
+  }
+
+  p.large {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+}
+
+
+
+}
+
+
+@media (min-width: 992px) {
+
+  .slanted {
+      font-size: 40px;
+      text-transform: uppercase;
+      transform: rotate(-5deg) skew(-5deg);
+      width: 100%;
+      margin: auto;
+      font-size: 4.5em;
+      font-weight: bold;
+      text-align: center;
+      color: $yellow;
+  }
+
+
+}
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+
+
+.responsive {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+    border: 3px solid $yellow;
+}
+
+.play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  width: 48px;
+  z-index:999;
+}
+
+
+li.lslide {
+    position: relative;
+}
+
+
+.lSSlideOuter .lSPager.lSpg>li a {
+    background-color: white;
+        max-width: 1200px;
+
+  }
+
+
+  .lSAction>a {
+      width: 1.5rem;
+    }
+
+
+    .right-arrow {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+    }
+
+.line {
+        height: 15px;
+        width: 100%;
+        float: left;
+        background-color: #d3121e;
+        margin-bottom: 5px;
+        background-color: $yellow;
+    }
+
+
+
+
+    .in-action {
+        background: url(/images/sprintathon_chevron2.svg) no-repeat center center;
+        background-size: 40rem;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        background-color: $red;
+        border-radius: 0rem;
+        position: relative;
+        background-size: 35rem;
+
+    }
+
+
+    .lSSlideOuter {
+        overflow: hidden;
+        user-select: none;
+        padding: 0;
+
+      }
+
+
+        .lSSlideOuter .lSGallery li, .lSSlideOuter .lightSlider>* {
+            float: left;
+            margin: 0;
+        }
+
+        .lSSlideWrapper {
+            z-index: 2;
+        }
+
+.lSAction>.lSNext {
+      background-position: -32px 0;
+      right: 7%;
+  }
+
+
+  .lSAction>.lSPrev {
+      background-position: 0 0;
+      left: 7%;
+  }
+
+
+  @media (max-width: 880px) {
+
+
+    .lines.start {
+        width: 100%;
+        position: absolute;
+        top: 46%;
+        z-index: 1;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: $secondary-font, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 4rem;
+    }
+
+}
+
+
+
+@media (max-width: 750px) {
+  .lSAction>.lSNext {
+        display: none;
+
+    }
+
+
+    .lSAction>.lSPrev {
+        display: none;
+    }
+
+
+    img.stand-up-img.responsive {
+        border: none;
+        max-width: 50%
+    }
+
+    .header {
+    font-size: 1.8em;
+}
+}
+
+
+.lSSlideOuter {
+    overflow: hidden;
+    user-select: none;
+    padding: 0;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+.row-full-width {
+  width: 100%;
+
+  &.yellow {
+    background-color: $yellow;
+  }
+
+  &.red {
+    background: url(/images/sprintathon_chevron2.svg) no-repeat center center;
+    background-color: $red;
+    background-size: 35rem;
+
+  }
+}
+
+
+.footer {
+  background-color: $red;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+
+@media (max-width: 365px) {
+  p.large {
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+
+}
+
+
+img.stand-up-img {
+    border: none;
+
+
+}
+
+
+p.small.last {
+    margin-bottom: 0px;
+}
+
+.container.where {
+    BORDER: 4PX SOLID $red;
+}
+
+
+img.where-img {
+    padding-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+
+.lSAction>a {
+    opacity: 1;
+}
+
+
+a.underline {
+    color: #212529;
+    text-decoration: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.underline:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+body { padding-top: 64px; }
+
+
+
+.faq {
+		width: 100%;
+		float: left;
+		margin-bottom: 30px;
+
+		h3 {
+			margin-top: 0;
+			text-align: center;
+		}
+		h4 {
+			text-align: left;
+			font-weight: 700;
+			padding: 20px;
+			margin:0;
+			display: block;
+			text-decoration: none;
+			color: $red;
+			font-family:$secondary-font;
+			transition: background-color 0.5s ease-in-out;
+			border-bottom: 2px solid #f3f3f3;
+		}
+		dl {
+			margin:0;
+		}
+		.accordionTitle {
+			text-align: left;
+			font-weight: 700;
+			padding: 30px 20px;
+			display: block;
+			text-decoration: none;
+			color: #000;
+			font-family:$secondary-font;
+			transition: background-color 0.5s ease-in-out;
+			border-bottom: 1px solid #f3f3f3;
+
+			&:before {
+				content: "+";
+				color:$red;
+				font-size: 2em;
+				line-height: 0.5em;
+				float: right;
+				transition: transform 0.3s ease-in-out;
+			}
+
+		}
+
+		.accordionTitle.is-expanded,
+		.accordionTitleActive {
+			&.accordion-title {
+				&.is-expanded {
+					border:0;
+				}
+			}
+			&:before {
+				content:"-";
+				transform: rotate(-360deg);
+			}
+		}
+
+		.accordionItem {
+			height: auto;
+			overflow: hidden;
+			margin-left:0;
+			padding:0 20px;
+			//SHAME: magic number to allow the accordion to animate
+			max-height: 50em;
+			transition: max-height 1s;
+			@include bp (min-width, $sm-tablet) {
+				max-height: 15em;
+				transition: max-height 0.5s;
+			}
+			&.is-expanded {
+				border-bottom: 1px solid #f3f3f3;
+				padding-bottom:30px;
+			}
+			p {
+				color:#444;
+				font-size:14px;
+				font-family:$secondary-font;
+				font-weight:normal;
+			}
+		}
+
+		.accordionItem.is-collapsed {
+			max-height: 0;
+		}
+
+		.no-js .accordionItem.is-collapsed {
+			max-height: auto;
+		}
+
+		.animateIn {
+			animation: accordionIn 0.45s normal ease-in-out both 1;
+		}
+
+		.animateOut {
+			animation: accordionOut 0.45s alternate ease-in-out both 1;
+		}
+}
+
+
+.the-rivals {
+	padding-bottom: 50px;
+	background-color: $red;
+	position:relative;
+	padding-top: 50px;
+	@include bp (min-width, $lg-tablet) {
+		padding-bottom:60px;
+	}
+	.trainers {
+		display:none;
+		position:absolute;
+		bottom:-120px;
+		@include bp (min-width, $lg-tablet) {
+			display:block;
+		}
+		&.trainer-left {
+			left:-100%;
+			width:440px;
+			height:450px;
+			background-position:100% 100%;
+			background-image: url('../../images/img/trainer-l.png');
+			background-repeat:no-repeat;
+			&.start {
+				animation: trainerleft .5s ease-out forwards;
+			}
+		}
+		&.trainer-right {
+			right:-100%;
+			width:440px;
+			height:450px;
+			background-position:100% 100%;
+			background-image: url('../../images/img/trainer-r.png');
+			background-repeat:no-repeat;
+			&.start {
+				animation: trainerright .5s ease-out forwards;
+			}
+		}
+	}
+	.inner {
+		max-width:1000px;
+	}
+	h2 {
+		text-align:center;
+		margin-top:0;
+	}
+	.leaders {
+		.col {
+			width:100%;
+			float:left;
+			text-align:center;
+			position:relative;
+			@include bp (min-width, $lg-tablet) {
+				width:33.33%;
+			}
+			.yellow-cta {
+				float:none;
+				display:inline-block;
+			}
+			.thumbnail-wrap {
+				position:relative;
+				overflow:hidden;
+				border-radius:320px;
+				border:8px solid $yellow;
+				margin-bottom:20px;
+				width:160px;
+				height:160px;
+				max-width:320px;
+				max-width:320px;
+				margin:20px auto 0;
+				@include bp (min-width, $lg-tablet) {
+					margin: 0 auto;
+					width:320px;
+					height:320px;
+				}
+				&:after {
+					content:'';
+					position:absolute;
+					top:0;
+					bottom:0;
+					left:0;
+					right:0;
+					width:100%;
+					height:100%;
+				}
+			}
+			&.win {
+				.thumbnail-wrap {
+					&:after {
+						background: rgba(147, 194, 50, 0.8);
+					}
+				}
+			}
+			&.lose {
+				.thumbnail-wrap {
+					&:after {
+						background: rgba(200, 54, 54, 0.8);
+					}
+				}
+			}
+			&.vs {
+				font-size:180px;
+				color:$yellow;
+				font-family:$primary-font;
+			}
+		}
+		.thumbnail {
+			width:100%;
+			height:100%;
+		}
+		h3 {
+			color:#FFF;
+			margin:15px 0 0;
+			&.text-overlay {
+				position: absolute;
+			    z-index: 99;
+			    text-align: center;
+			    width: 100%;
+			    top: 120px;
+			}
+		}
+		h4 {
+			color:$yellow;
+			margin-top:0;
+		}
+	}
+	#rivals-wrap {
+		width:100%;
+		float:left;
+	}
+}
+
+.other-rivals {
+	padding:50px 0;
+	background-color: $yellow;
+	text-align:center;
+	.show-more {
+		transition: all .2s linear;
+		text-align:center;
+		cursor:pointer;
+		&.active {
+			transform:rotate(180deg);
+		}
+	}
+	#rivals-wrap {
+		display:none;
+		padding:20px;
+		.page {
+			width:33.33%;
+			height:100px;
+			padding-bottom:20px;
+			margin-bottom:20px;
+			float:left;
+			border-bottom:5px solid $red;
+		}
+		.vs {
+			width:33.33%;
+			height:100px;
+			padding-bottom:20px;
+			margin-bottom:20px;
+			float:left;
+			border-bottom:5px solid $red;
+		}
+	}
+}
+
+
+inner {
+		max-width: 850px;
+		padding: 20px;
+
+		.left-col {
+			width: 100%;
+			float: left;
+			@include bp (min-width, $lg-tablet) {
+				width: 70%;
+			}
+			h2 {
+				color: $red;
+				font-size:48px;
+				line-height:44px;
+				letter-spacing: -1px;
+				text-align:center;
+				@include bp (min-width, $lg-tablet) {
+					text-align:left;
+					font-size: 76px;
+					line-height: 61px;
+				}
+				span {
+					&.large {
+						font-size:48px;
+						@include bp (min-width, $lg-tablet) {
+							font-size: 83px;
+						}
+					}
+
+					&.xlarge {
+						font-size:48px;
+						@include bp (min-width, $lg-tablet) {
+							font-size: 95px;
+							line-height: 75px;
+						}
+					}
+				}
+			}
+		}
+
+		.right-col {
+			width: 100%;
+			float: left;
+			text-align:center;
+			@include bp (min-width, $lg-tablet) {
+				width: 30%;
+			}
+			img {
+				padding-top: 20px;
+				max-width: 200px;
+				width: 100%;
+				clear:both;
+				@include bp (min-width, $lg-tablet) {
+					clear:none;
+					float: right;
+					padding-top: 70px;
+				}
+			}
+			.red-cta {
+				clear:both;
+				margin:30px;
+				display:inline-block;
+				@include bp (min-width, $lg-tablet) {
+					margin:20px 0 0;
+					float:right;
+					clear:none;
+				}
+			}
+		}
+
+		.total-raised {
+			margin: 10px 0;
+			border: 10px solid $red;
+			color: $red;
+			padding: 10px;
+			text-align:center;
+			float:left;
+			width:100%;
+			@include bp (min-width, $lg-tablet) {
+				width: calc(100% - 100px);
+				padding: 10px 40px;
+				margin: 50px 50px 0;
+			}
+			span {
+				font-size: 36px;
+				font-family: $primary-font;
+				text-transform: uppercase;
+				@include bp (min-width, $sm-tablet) {
+					float: left;
+				}
+				&.amount {
+					@include bp (min-width, $sm-tablet) {
+						float: right;
+					}
+				}
+			}
+		}
+	}
