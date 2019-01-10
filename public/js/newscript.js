@@ -10,16 +10,16 @@ hamburger.addEventListener("click", function() {
 
 $('#html5-videos').lightGallery({
               download: false,
-              showAfterLoad: true,
+              showAfterLoad: false,
               autoplay: true,
               share: false,
-              thumbnail: false,
+              thumbnail: true,
               fullScreen: true,
               pager: false,
               zoom: false,
 
 
-              
+
           });
 
 
