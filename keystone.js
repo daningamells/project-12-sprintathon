@@ -10,9 +10,9 @@ var keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-	'name': 'sprintathon',
-	'brand': 'sprintathon',
-
+	'name': 'Sprintathon',
+	'brand': 'Sprintathon',
+	'cloudinary config': 'cloudinary://555722234338293:jq3dNxweKsRWLoJYwT3OR0ahy-Q@sprintathon',
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
@@ -28,7 +28,7 @@ keystone.init({
 	'wysiwyg additional options': {
 	        skin : 'lightgray',
 					forced_root_block : false,
-	        
+
 	}
 });
 
