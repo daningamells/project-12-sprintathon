@@ -8030,7 +8030,11 @@ a#donate {
 
 @media (max-width: 992px) {
   .twitter-icon, .fb-icon {
-    fill: white; } }
+    fill: white; }
+  .button-primary span:after, .button-secondary span:after {
+    display: none; }
+  .button-primary span, .button-secondary span {
+    padding-inline-end: 0.5em !important; } }
 
 .jumbotron {
   background: url(/images/sprintathon_chevron2.svg) no-repeat center center;
@@ -8299,10 +8303,6 @@ li.lslide {
     line-height: 4rem; } }
 
 @media (max-width: 750px) {
-  .button-primary span:after, .button-secondary span:after {
-    display: none; }
-  .button-primary span, .button-secondary span {
-    padding-inline-end: 0.5em !important; }
   .lSAction > .lSNext {
     display: none; }
   .lSAction > .lSPrev {

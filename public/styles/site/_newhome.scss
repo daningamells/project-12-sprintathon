@@ -127,6 +127,16 @@ a#donate {
     fill: rgba(255, 255, 255, 1);
   }
 
+
+
+  .button-primary span:after, .button-secondary span:after {
+    display: none;
+  }
+
+  .button-primary span, .button-secondary span  {
+
+    padding-inline-end: 0.5em !important;
+}
 }
 
 .jumbotron {
@@ -494,14 +504,7 @@ li.lslide {
 
 @media (max-width: 750px) {
 
-  .button-primary span:after, .button-secondary span:after {
-    display: none;
-  }
 
-  .button-primary span, .button-secondary span  {
-
-    padding-inline-end: 0.5em !important;
-}
 
 
 
@@ -997,6 +1000,6 @@ inner {
   }
 
   a:hover {
-    
+
       text-decoration: none;
   }
