@@ -16,6 +16,7 @@ hamburger.addEventListener("click", function() {
                 fullScreen: true,
                 pager: false,
                 zoom: false,
+                videojs: true
 
 
 
@@ -242,4 +243,16 @@ $(function(){
          $('.lose .cta').attr('href',team1link);
        }
      });
+   });
+
+
+
+   var video = document.getElementsByTagName("video")[0];
+   $('.play-btn').on('click', function(e) {
+       $('#popup').addClass('show');
+       video.play();
+   });
+   $('.close-btn').on('click', function(e) {
+       $('#popup').removeClass('show');
+       video.pause();
    });
