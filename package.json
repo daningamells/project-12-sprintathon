@@ -2,6 +2,8 @@
   "name": "sprintathon",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "10.8.0"
   "dependencies": {
     "async": "2.1.4",
     "bootstrap": "^4.2.1",
@@ -26,8 +28,5 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node keystone.js"
-  },
-  "engines": {
-    "node": "10.8.0"
   },
 }
