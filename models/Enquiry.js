@@ -54,10 +54,10 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 		}).send({
 			to: admins,
 			from: {
-				name: 'sprintathon',
+				name: 'Sprintathon',
 				email: 'contact@sprintathon.com',
 			},
-			subject: 'New Enquiry for sprintathon',
+			subject: 'New Enquiry for Sprintathon',
 			enquiry: enquiry,
 			brand: brand,
 		}, callback);
