@@ -8,15 +8,18 @@ hamburger.addEventListener("click", function() {
 });
 
   $('#html5-videos').lightGallery({
-                download: false,
-                showAfterLoad: false,
-                autoplay: true,
-                share: false,
-                thumbnail: true,
-                fullScreen: true,
-                pager: false,
-                zoom: false,
-                videojs: true
+                // download: false,
+                // showAfterLoad: false,
+                // autoplay: true,
+                // share: false,
+                // thumbnail: true,
+                // fullScreen: true,
+                // pager: false,
+                // zoom: false,
+                videojs: true,
+                videojsOptions: {
+                  autoplay: true
+                }
 
 
 
@@ -76,7 +79,7 @@ $( '.video-gallery' ).each(function() {
                 autoplay: true,
                 share: false,
                 thumbnail: false,
-                fullScreen: false,
+                fullScreen: true,
                 pager: false,
                 zoom: false
             });

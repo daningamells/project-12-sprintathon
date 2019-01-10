@@ -8661,3 +8661,6 @@ inner {
 
 .bg-info {
   background-color: #e40b18 !important; }
+
+a:hover {
+  text-decoration: none; }
