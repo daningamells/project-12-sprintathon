@@ -1003,3 +1003,20 @@ inner {
 
       text-decoration: none;
   }
+
+  @media (max-width: 992px) {
+    .twitter-icon, .fb-icon {
+      fill: rgba(255, 255, 255, 1);
+    }
+
+
+
+    .button-primary span:after, .button-secondary span:after {
+      display: none;
+    }
+
+    .button-primary span, .button-secondary span  {
+
+      padding-inline-end: 0.5em !important;
+  }
+  }
