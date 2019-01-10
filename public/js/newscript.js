@@ -14,9 +14,12 @@ $('#html5-videos').lightGallery({
               autoplay: true,
               share: false,
               thumbnail: false,
-              fullScreen: false,
+              fullScreen: true,
               pager: false,
-              zoom: false
+              zoom: false,
+
+
+              
           });
 
 
