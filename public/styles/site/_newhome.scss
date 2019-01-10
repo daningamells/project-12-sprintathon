@@ -150,6 +150,7 @@ a#donate {
     font-weight: bold;
     text-align: center;
     color: $yellow;
+    padding-top: 0.5em;
 }
 
 h1, h2, h3, h4 {
@@ -288,6 +289,7 @@ right: 10px;
     text-align: center;
     color: $yellow;
     line-height: 3rem;
+    padding-top: 0.5em;
   }
 
   p {
@@ -315,7 +317,7 @@ right: 10px;
 }
 
   .x-large {
-      font-size: 2.5rem;
+      font-size: 1.4rem;
   }
 
   p.large {
@@ -971,4 +973,13 @@ inner {
 
   .white {
       color: #FFF;
+  }
+
+  .close:not(:disabled):not(.disabled) {
+      cursor: pointer;
+      position: initial;
+  }
+
+  .bg-info {
+      background-color: $red !important;
   }

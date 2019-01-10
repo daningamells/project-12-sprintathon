@@ -12,7 +12,7 @@ block content
 			meta(property='og:title', content='Sprintathon')
 			meta(property='og:type', content='website')
 			meta(property='og:url', content='http://sprintathon.org/')
-			meta(property='og:description', content='The Sprintathon Showdown is here and Marlow may never be the same. Teams will battle, Lycra will be worn, and the Marathon World Record will fall. Back our team and help beat cancer faster, visit sprintathon.org')
+			meta(property='og:description', content='The Sprintathon Showdown is here. Teams will battle, Lycra will be worn, and the Marathon World Record will fall. Back our team and help beat cancer faster, visit sprintathon.org')
 			meta(property='og:image', content='http://sprintathon.org/img/sprintathon-share.png')
 			link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700,800" rel="stylesheet")
 			link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
@@ -20,13 +20,10 @@ block content
 			link(rel="stylesheet" href="/styles/lightgallery.min.css")
 			link(href="/styles/site.css", rel="stylesheet")
 			script(src='/js/jquery/jquery-3.3.1.min.js')
-			
 			script(src="/js/lightslider.min.js")
 			script(src="/js/lightgallery-all.min.js")
 			script(src="/js/lg-video.min.js")
 			script(src="/js/lg-autoplay.min.js")
-			
-			
 			
 			//- This file provides the default styling for the KeystoneJS Content Editor
 			if user && user.canAccessKeystone
@@ -75,7 +72,7 @@ block content
 						button.button-primary#html5-videos(type='submit')
 								span(data-html='#video1') WATCH OUR VIDEO
 				
-			.container.my-5.text-center.text-lg-left
+			.container.my-5.text-center.text-lg-left.px-4
 				.row.justify-content-center
 					.col-lg-6.pr-lg-5.pl-lg-0
 						p.header
@@ -155,7 +152,9 @@ block content
 									p.small
 										span!=page.involved.description2
 								.col.text-center 
-									p.small.last Want to organise your own Sprintathon? Contact us for more information.
+									p.small.last Want to organise your own Sprintathon? <a class="underline" href="#bannerformmodal" data-toggle="modal" data-target="#contact">Contact us</a> for more information.
+									
+						
 									
 			.row-full-width.red#beat
 				.container.donate.py-5
@@ -214,30 +213,30 @@ block content
 								p.large #{page.where.amount4}
 							.col
 								p.small.last.red #{page.where.description4}
-		.row-full-width.red
-			.container.the-rivals#three
-				.row
-					h2.white The Rivals
-					.leaders
-						.win.col
-							h3#winningtext.text-overlay Winning
-							.thumbnail-wrap
-								img.thumbnail(src='')
-							h3.namelabel
-							h4
-								| Raised so far: £
-								span.team1total 0
-							a.yellow-cta.cta(href='#') Donate Here
-						.vs.col VS
-						.lose.col
-							.thumbnail-wrap
-								h3#losingtext.text-overlay Losing
-								img.thumbnail(src='')
-							h3.namelabel
-							h4
-								| Raised so far: £
-								span.team2total 0
-							a.yellow-cta.cta(href='#') Donate Here
+		//- .row-full-width.red
+		//- 	.container.the-rivals#three
+		//- 		.row
+		//- 			h2.white The Rivals
+		//- 			.leaders
+		//- 				.win.col
+		//- 					h3#winningtext.text-overlay Winning
+		//- 					.thumbnail-wrap
+		//- 						img.thumbnail(src='')
+		//- 					h3.namelabel
+		//- 					h4
+		//- 						| Raised so far: £
+		//- 						span.team1total 0
+		//- 					a.yellow-cta.cta(href='#') Donate Here
+		//- 				.vs.col VS
+		//- 				.lose.col
+		//- 					.thumbnail-wrap
+		//- 						h3#losingtext.text-overlay Losing
+		//- 						img.thumbnail(src='')
+		//- 					h3.namelabel
+		//- 					h4
+		//- 						| Raised so far: £
+		//- 						span.team2total 0
+		//- 					a.yellow-cta.cta(href='#') Donate Here
 				
 				
 		.container.stand-up
@@ -269,28 +268,40 @@ block content
 								dd#accordion5.accordion-content.accordionItem.is-collapsed(aria-hidden='true')
 									p #{page.faq.answer5}
 
-			#register.modal.fade(tabindex='-1', role='dialog', aria-labelledby='registerForm', aria-hidden='true')
+			
+			
+			#contact.modal.fade(tabindex='-1', role='dialog', aria-labelledby='registerForm', aria-hidden='true')
 				.modal-dialog(role='document')
 					.modal-content
 						.modal-header.bg-info.text-white
-							h5#exampleModalLabel.modal-title Register for full stack conf
+							h5#ModalLabel.modal-title Contact Us
 							button.close(type='button', data-dismiss='modal', aria-label='Close')
 								span(aria-hidden='true') ×
 						.modal-body
-							form
-								h5.mb-4 Basic Info
-								.form-group
-									label(for='name') Name
-									input#name.form-control(type='text')
-								.form-group
-									label(for='email') Email:
-									input#email.form-control(type='email')
-								.form-group
-									label(for='exampleFormControlTextarea1') Example textarea
-									textarea#exampleFormControlTextarea1.form-control(rows='3')
+							if enquirySubmitted
+								h3 Thanks for getting in touch.
+							else
+								.row: .col.p-3
+									form(method='post').form-horizontal
+										input(type='hidden', name='action', value='contact')
+										.form-group(class=validationErrors.name ? 'has-error' : null)
+											label.col-sm-2.text-left.control-label Name
+											.col-sm-10
+												input(type='text' name='name.full' value=formData['name.full'] required placeholder="First Last").form-control
+										.form-group(class=validationErrors.email ? 'has-error' : null)
+											label.col-sm-2.control-label Email
+											.col-sm-10
+												input(type='email' name='email' value=formData.email required placeholder="name@domain.com").form-control
 								
-								hr.my-4
-								button.btn.btn-primary.btn-lg(type='submit') Register
+									
+										.form-group(class=validationErrors.message ? 'has-error' : null)
+											label.col-sm-2.control-label Message
+											.col-sm-10
+												textarea(name='message' placeholder='Leave us a message...' rows=4 required).form-control= formData.message
+										.form-group
+											.col-sm-10.col-sm-offset-2
+												button.button-secondary(type='submit') 
+													span  Submit
 			
 			//- <img src="#{page.image.secure_url}"  alt="sprintathon logo">
 		script(src='/js/newscript.js?v=200917')
@@ -298,5 +309,6 @@ block content
 		
 		
 		
+
 					
 	
