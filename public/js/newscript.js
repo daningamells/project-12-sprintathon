@@ -117,7 +117,7 @@ $('#who-link').click(function(event) {
 });
 
 $('#faq-link').click(function(event) {
-    var offset = 0;
+    var offset = 65;
     event.preventDefault();
     $($(this).attr('href'))[0].scrollIntoView();
     scrollBy(0, -offset);
