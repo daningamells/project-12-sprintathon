@@ -8299,6 +8299,10 @@ li.lslide {
     line-height: 4rem; } }
 
 @media (max-width: 750px) {
+  .button-primary span:after, .button-secondary span:after {
+    display: none; }
+  .button-primary span, .button-secondary span {
+    padding-inline-end: 0.5em !important; }
   .lSAction > .lSNext {
     display: none; }
   .lSAction > .lSPrev {
