@@ -7,20 +7,28 @@ hamburger.addEventListener("click", function() {
   // Do something else, like open/close menu
 });
 
-
-$('#html5-videos').lightGallery({
-              download: false,
-              showAfterLoad: false,
-              autoplay: true,
-              share: false,
-              thumbnail: true,
-              fullScreen: true,
-              pager: false,
-              zoom: false,
-
+  $('#html5-videos').lightGallery({
+                download: false,
+                showAfterLoad: false,
+                autoplay: true,
+                share: false,
+                thumbnail: true,
+                fullScreen: true,
+                pager: false,
+                zoom: false,
 
 
-          });
+
+            });
+
+            $( "#html5-videos > span" ).click(function() {
+$("span.lg-fullscreen.lg-icon").click().delay( 3000 );
+console.log("fitred")
+});
+
+
+
+
 
 
 
