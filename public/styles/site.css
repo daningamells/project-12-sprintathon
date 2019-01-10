@@ -8730,3 +8730,6 @@ inner {
       @media only screen and (min-width: 768px) {
         inner .total-raised span.amount {
           float: right; } }
+
+.white {
+  color: #FFF; }

@@ -1,6 +1,5 @@
 var keystone = require('keystone');
-const router = express.Router();
-const express = require("express");
+var Page = keystone.list('Page');
 
 exports = module.exports = function (req, res) {
 
@@ -10,15 +9,25 @@ exports = module.exports = function (req, res) {
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
 	locals.section = 'home';
-	console.log('hello');
+
+	view.on('init', function (next) {
+
+		var q = Page.model.findOne({
+			state: 'published'
+		});
+
+		q.exec(function (err, result) {
+			locals.page = result;
+			console.log(locals.page.Heading)
+			next(err);
+
+		});
+
+	});
+
+
+	console.log(req.body)
 
 	// Render the view
 	view.render('index');
 };
-
-
-
-
-router.get('/', (req, res, next) => {
- 	console.log('hello');
-});

@@ -66,9 +66,7 @@ block content
 								a.nav-link#donate(a href="https://www.standuptocancer.org.uk/ways-to-donate/#external" data-target="#external") DONATE NOW
 			.jumbotron
 				h1.slanted 
-					| YOUR LITTLE BIT OF 
-					span.white GREATNESS 
-					| WILL GO A LONG WAY
+					span!=page.header.heading
 				.row.justify-content-center
 						#video1(style='display:none;')
 							video.lg-video-object.lg-html5(controls='', preload='none')
@@ -81,22 +79,21 @@ block content
 				.row.justify-content-center
 					.col-lg-6.pr-lg-5.pl-lg-0
 						p.header
-							span.red ARE YOU READY FOR GREATNESS? THIS IS 
-							| SPRINTATHON.
+							span!=page.ready.heading
 					.col-lg-6.pl-lg-5.pr-lg-0
 						.row
 							.col-4
-								p.large.text-center <span class="x-large">422</span><br><span class="red">RUNNERS
+								p.large.text-center <span class="x-large">#{page.ready.runners}</span><br><span class="red">RUNNERS
 							.col-4
-									p.large.text-center <span class="x-large">105</span><br><span class="red">TEAMS
+									p.large.text-center <span class="x-large">#{page.ready.teams}</span><br><span class="red">TEAMS
 							.col-4
-									p.large.text-center <span class="x-large">£xx</span><br><span class="red">RAISED
+									p.large.text-center <span class="x-large">#{page.ready.raised}</span><br><span class="red">RAISED
 				.row.justify-content-center
 					.col-lg-6.pr-lg-5.pl-lg-0
-						p.large THE MARATHON RELAY WE RUN TOGETHER IN 100M SPRINTS FOR STAND UP FOR CANCER.
+						p.large #{page.ready.description2}
 					
 					.col-lg-6.pl-lg-5.pr-lg-0
-						p.small Sprintathon unites great people together to break the world record for the fastest ever marathon. Because together we run further and faster, and together we’ll raise loads of money for Stand Up To Cancer. 
+						p.small #{page.ready.description}
 				.row.justify-content-left
 					.col-lg-6.pr-lg-5.pl-lg-0
 						button.button-secondary(type='submit' onclick="window.open('https://www.standuptocancer.org.uk/ways-to-donate');")
@@ -105,36 +102,37 @@ block content
 				
 				p.in-action-header.text-center.header.yellow SPRINTATHON IN ACTION
 					ul#autoplay
+						
+		
 										
 						li.video-gallery
-								a(href='https://www.youtube.com/watch?v=XH6XeVpckBA')
+								a(href=`${page.action.video1}`)
 									img.responsive(src='/images/sprint-video-1.png')
 									img.play-btn(src="/images/img/play-button.png")
-							
-				
+
 						li.video-gallery
-									a(href='https://www.youtube.com/watch?v=uv-zUZHKd9g')
+									a(href=`${page.action.video2}`)
 										img.responsive(src='/images/sprint-video-2.png')
 										img.play-btn(src="/images/img/play-button.png")
 									
 
 						li.video-gallery
-									a(href='https://www.youtube.com/watch?v=gxm1zbAGE0c')
+								a(href=`${page.action.video3}`)
 										img.responsive(src='/images/sprint-video-3.png')
 										img.play-btn(src="/images/img/play-button.png")
 
 						li.video-gallery
-									a(href='https://www.youtube.com/watch?v=8LpfDJ0h_7k')
+									a(href=`${page.action.video4}`)
 										img.responsive(src='/images/sprint-video-4.png')
 										img.play-btn(src="/images/img/play-button.png")
 
 						li.video-gallery
-									a(href='https://www.youtube.com/watch?v=XlrhTjxH3sg')
+									a(href=`${page.action.video5}`)
 										img.responsive(src='/images/sprint-video-5.png')
 										img.play-btn(src="/images/img/play-button.png")
 
 						li.video-gallery
-									a(href='https://www.youtube.com/watch?v=S48A0icLyp8')
+									a(href=`${page.action.video6}`)
 										img.responsive(src='/images/sprint-video-6.png')
 										img.play-btn(src="/images/img/play-button.png")
 
@@ -145,78 +143,77 @@ block content
 						
 			.row-full-width.yellow#how
 				.container.get-involved.py-5.px-3.text-center.text-md-left
-						p.in-action-header.text-center.header.red HOW TO GET INVLOVED
+						p.in-action-header.text-center.header.red #{page.involved.header}
 							.row
 								.col-md-6 
-									p.large.red THE CAMPAIGN SPRINTATHON
+									p.large.red #{page.involved.description1}
 									.row
 										.col 
-											p.large <span class="red">Date:</span> 25th July 2019 <br><span class="red"> Location:</span> The Olympic Park Community Track
-											
+											p.large 
+												span!=page.involved.date
 								.col-md-6 
-									p.small Do you work in the advertising industry? Do you want to break the record for the fastest ever relay marathon, raise loads of money for Stand Up to Cancer, and be in with a chance to win ultimate bragging rights, by being crowned the "fastest in Adland"? <br><br>Then sign up your team of four runners <a class="underline" href="https://events.cancerresearchuk.org/registration/select/wave/N19H1GW01">here</a>. 
-							.row
+									p.small
+										span!=page.involved.description2
 								.col.text-center 
 									p.small.last Want to organise your own Sprintathon? Contact us for more information.
 									
 			.row-full-width.red#beat
 				.container.donate.py-5
 					.row
-						.col
-							h2.slanted <span class="white">NOT RUNNING</span><br>BUT WANT TO HELP BEAT CANCER FASTER?
-					.row
-						.col.text-center
+						.col-12
+							h2.slanted.white!=page.beat.header
+						.col-12.text-center
 							button.button-primary(type='submit' onclick="window.open('https://www.standuptocancer.org.uk/ways-to-donate');")
 								span DONATE NOW 
 								
 			.container.who.py-5#who
 				.row
 					.col.text-center
-						p.header.red WHO'S IT FOR?
+						p.header.red #{page.who.header}
 				.row
 					.col-md-8.text-center.text-md-left
-						p.small Brought to you by Cancer Research UK and Channel 4, Stand Up To Cancer is an annual fundraising campaign that brings the UK together to speed-up progress in life-saving cancer research. The money raised supports UK scientists working in cancer centres, NHS hospitals, universities and institutes, taking ground-breaking discoveries from the lab and turning them into new treatments and tests for cancer patients who need them right now. Visit standuptocancer.org.uk for more info. And you can support this amazing work by donating on our Just Giving page.
+						p.small #{page.who.description}
 					.col-md-4.text-center
-						img.stand-up-img.responsive(src="/images/sprintathon_logo-standupotocancer.svg")
+						img.stand-up-img.responsive(src=`${page.who.image.secure_url}`)
 			.container.where.py-3.mb-5
 				.row
 					.col.text-center
-						p.header.red WHERE DOES THE MONEY GO?
+						p.header.red #{page.where.header}
 				.row.text.center
 					.col-6.col-lg-3.text-center.pb-5
 						.row
 							.col-12
-								img.where-img(src="/images/sprintathon_icons-sieve.svg")
+								img.where-img(src=`${page.where.image1.secure_url}`)
 							.col-12
-								p.large £50
+								p.large #{page.where.amount1}
 							.col
-								p.small.last.red buys a ‘scientific sieve’ to separate out big bits and small bits of DNA to reveal vital clues about how to beat cancer, sooner.
+								p.small.last.red #{page.where.description1}
 					.col-6.col-lg-3.text-center
 						.row
 							.col-12
-								img.where-img(src="/images/sprintathon_icons-dish.svg")
+								img.where-img(src=`${page.where.image2.secure_url}`)
 							.col-12
-								p.large £200
+								p.large #{page.where.amount2}
 							.col
-								p.small.last.red buys 500 special plastic dishes that let Stand Up To Cancer-supported scientists follow a cancer cell’s every move.
+								p.small.last.red #{page.where.description2}
 
 					.col-6.col-lg-3.text-center
 						.row
 							.col-12
-								img.where-img(src="/images/sprintathon_icons-DNA.svg")
+								img.where-img(src=`${page.where.image3.secure_url}`)
 							.col-12
-								p.large £500
+								p.large #{page.where.amount3}
 							.col
-								p.small.last.red buys one DNA sequencing experiment, helping Stand Up to Cancer scientists uncover the genetic blueprint of a cancer cell’s DNA. 
+								p.small.last.red #{page.where.description3}
 
 					.col-6.col-lg-3.text-center
 						.row
 							.col-12
-								img.where-img(src="/images/sprintathon_icons-person.svg")
+								img.where-img(src=`${page.where.image4.secure_url}`)
 							.col-12
-								p.large £100
+								p.large #{page.where.amount4}
 							.col
-								p.small.last.red kits out a fresh-faced PhD student with everything they need to begin Standing Up To Cancer.
+								p.small.last.red #{page.where.description4}
 		.row-full-width.red
 			.container.the-rivals#three
 				.row
@@ -252,30 +249,25 @@ block content
 						.accordion#faq
 							dl
 								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion1', aria-expanded='false', aria-controls='accordion1') What is a Sprintathon?
+									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion1', aria-expanded='false', aria-controls='accordion1') #{page.faq.question1}
 								dd#accordion1.accordion-content.accordionItem.is-collapsed(aria-hidden='true')
-									p
-										| The Sprintathon is a local event in Marlow whereby 422 participants, in teams of 4, will each run 100 meters of Marlow running track in order to make history by completing the fastest ever marathon.
+									p #{page.faq.answer1}
 								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion2', aria-expanded='false', aria-controls='accordion2') Who is taking part in the Sprintathon?
+									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion2', aria-expanded='false', aria-controls='accordion2') #{page.faq.question2}
 								dd#accordion2.accordion-content.accordionItem.is-collapsed(aria-hidden='true')
-									p
-										| The runners of the Sprintathon are an eclectic mix of celebrities, sports stars, Olympians and Paralympians, Invictus athletes, cancer survivors and normal men, woman and children, all hoping to break the marathon world record.
+									p #{page.faq.answer2}
 								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion3', aria-expanded='false', aria-controls='accordion3') Can I attend?
+									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion3', aria-expanded='false', aria-controls='accordion3') #{page.faq.question3}
 								dd#accordion3.accordion-content.accordionItem.is-collapsed(aria-hidden='true')
-									p
-										| There is very limited space at the venue but you can follow the event on Sprintathon’s social media channels, or follow Josh Pieters and Joe Sugg’s progress via their YouTube channel.
+									p #{page.faq.answer3}
 								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion4', aria-expanded='false', aria-controls='accordion4') Where does the sponsorship money go?
+									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion4', aria-expanded='false', aria-controls='accordion4') #{page.faq.question4}
 								dd#accordion4.accordion-content.accordionItem.is-collapsed(aria-hidden='true')
-									p
-										| Money raised through the Sprintathon helps fund the Stand Up To Cancer’s life-saving work in preventing, controlling and curing cancer. Our vision is to bring forward the day when all cancers are cured, from the most common types to those that affect just a few people. For more information about Stand Up To Cancer, visit https://www.standuptocancer.org.uk.
+									p #{page.faq.answer4}
 								dt
-									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion5', aria-expanded='false', aria-controls='accordion5') What is GiftAid?
+									a.accordion-title.accordionTitle.js-accordionTrigger(href='#accordion5', aria-expanded='false', aria-controls='accordion5') #{page.faq.question5}
 								dd#accordion5.accordion-content.accordionItem.is-collapsed(aria-hidden='true')
-									p
-										| If you are a UK taxpayer, the Government’s Gift Aid scheme allows Cancer Research UK to claim tax back on your donations. We can currently claim at least 25% back from the Government on every sponsorship donation, without it costing you a penny extra. Find out more about Gift Aid here - http://www.cancerresearchuk.org/support-us/donate/gift-aid-explained.
+									p #{page.faq.answer5}
 
 			#register.modal.fade(tabindex='-1', role='dialog', aria-labelledby='registerForm', aria-hidden='true')
 				.modal-dialog(role='document')
@@ -299,7 +291,8 @@ block content
 								
 								hr.my-4
 								button.btn.btn-primary.btn-lg(type='submit') Register
-								
+			
+			//- <img src="#{page.image.secure_url}"  alt="sprintathon logo">
 		script(src='/js/newscript.js?v=200917')
 		
 		
