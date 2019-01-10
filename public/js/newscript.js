@@ -81,7 +81,9 @@ $( '.video-gallery' ).each(function() {
                 thumbnail: false,
                 fullScreen: true,
                 pager: false,
-                zoom: false
+                zoom: false,
+                autoplayFirstVideo:true,
+                youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, rel: 0, autoplay: 1 },
             });
 
 
