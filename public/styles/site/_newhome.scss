@@ -135,7 +135,7 @@ a#donate {
 
   .button-primary span, .button-secondary span  {
 
-    padding-inline-end: 0.5em !important;
+    padding-right: 0.5em !important;
 }
 }
 
@@ -201,7 +201,7 @@ h1, h2, h3, h4 {
     display: block;
     text-decoration: none;
     padding: 0.5em;
-    padding-inline-end: 2em;
+    padding-right: 2em;
 }
 
 .button-secondary span:after {
@@ -247,7 +247,7 @@ transition: all .3s ease-out;
     display: block;
     text-decoration: none;
     padding: 0.5em;
-    padding-inline-end: 2em;
+    padding-right: 2em;
 }
 
 
@@ -1017,6 +1017,6 @@ inner {
 
     .button-primary span, .button-secondary span  {
 
-      padding-inline-end: 0.5em !important;
+      padding-right: 0.5em !important;
   }
   }

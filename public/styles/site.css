@@ -8034,7 +8034,7 @@ a#donate {
   .button-primary span:after, .button-secondary span:after {
     display: none; }
   .button-primary span, .button-secondary span {
-    padding-inline-end: 0.5em !important; } }
+    padding-right: 0.5em !important; } }
 
 .jumbotron {
   background: url(/images/sprintathon_chevron2.svg) no-repeat center center;
@@ -8090,7 +8090,7 @@ h1, h2, h3, h4 {
   display: block;
   text-decoration: none;
   padding: 0.5em;
-  padding-inline-end: 2em; }
+  padding-right: 2em; }
 
 .button-secondary span:after {
   width: 18px;
@@ -8132,7 +8132,7 @@ h1, h2, h3, h4 {
   display: block;
   text-decoration: none;
   padding: 0.5em;
-  padding-inline-end: 2em; }
+  padding-right: 2em; }
 
 button span:hover:after {
   right: 10px; }
@@ -8665,10 +8665,10 @@ inner {
 a:hover {
   text-decoration: none; }
 
-@media (max-width: 992px) {
+@media (max-width: 1025px) {
   .twitter-icon, .fb-icon {
     fill: white; }
   .button-primary span:after, .button-secondary span:after {
     display: none; }
   .button-primary span, .button-secondary span {
-    padding-inline-end: 0.5em !important; } }
+    padding-right: 0.5em !important; } }
